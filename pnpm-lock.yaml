@@ -39,6 +39,9 @@ importers:
       '@fontsource-variable/manrope':
         specifier: 5.3.0
         version: 5.3.0
+      '@netlify/plugin-nextjs':
+        specifier: 5.16.6
+        version: 5.16.6
       '@types/node':
         specifier: 24.19.2
         version: 24.19.2
@@ -594,6 +597,10 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
+
+  '@netlify/plugin-nextjs@5.16.6':
+    resolution: {integrity: sha512-BXy5WhogsaQOKz+C+KMlWrQupdGkV1a6TmJ6RLF6RwUMz6Oi419RejMD8yB8ttBKqImQDkOE4MmNLx3uEEKxPw==}
+    engines: {node: '>=18.0.0'}
 
   '@next/env@16.4.5':
     resolution: {integrity: sha512-JwSPwpdkZL5VMl2jA/q+JI8MZdweAL3xmw5/tb9y/TLtmS0YXZnmYDzSihwk8xTj1OL+WM53gTqaj96yuLp6Xw==}
@@ -3323,6 +3330,8 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.6.0
 
+  '@netlify/plugin-nextjs@5.16.6': {}
+
   '@next/env@16.4.5': {}
 
   '@next/eslint-plugin-next@16.4.5(eslint@9.39.5)':
@@ -4294,7 +4303,7 @@ snapshots:
       eslint: 9.39.5
       eslint-import-resolver-node: 0.3.10
       eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.72.1(eslint@9.39.5)(typescript@6.0.3))(eslint@9.39.5))(eslint@9.39.5)
-      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.72.1(eslint@9.39.5)(typescript@6.0.3))(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.72.1(eslint@9.39.5)(typescript@6.0.3))(eslint@9.39.5))(eslint@9.39.5))(eslint@9.39.5)
+      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.72.1(eslint@9.39.5)(typescript@6.0.3))(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.5)
       eslint-plugin-jsx-a11y: 6.10.2(eslint@9.39.5)
       eslint-plugin-react: 7.37.5(eslint@9.39.5)
       eslint-plugin-react-hooks: 7.1.1(eslint@9.39.5)
@@ -4327,7 +4336,7 @@ snapshots:
       tinyglobby: 0.2.17
       unrs-resolver: 1.13.0
     optionalDependencies:
-      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.72.1(eslint@9.39.5)(typescript@6.0.3))(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.72.1(eslint@9.39.5)(typescript@6.0.3))(eslint@9.39.5))(eslint@9.39.5))(eslint@9.39.5)
+      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.72.1(eslint@9.39.5)(typescript@6.0.3))(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.5)
     transitivePeerDependencies:
       - supports-color
 
@@ -4342,7 +4351,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.72.1(eslint@9.39.5)(typescript@6.0.3))(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.72.1(eslint@9.39.5)(typescript@6.0.3))(eslint@9.39.5))(eslint@9.39.5))(eslint@9.39.5):
+  eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.72.1(eslint@9.39.5)(typescript@6.0.3))(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.5):
     dependencies:
       '@rtsao/scc': 1.1.0
       array-includes: 3.2.0

@@ -45,6 +45,10 @@ pnpm start --hostname 127.0.0.1 --port 4387
 
 Open <http://127.0.0.1:4387/az>. Keep the server running in its terminal. This project needs a Node.js server for `/api/contact`; a static-only host cannot provide the form endpoint.
 
+## Netlify deployment
+
+The checked-in `netlify.toml` runs the production build with Node.js 24 and publishes `.next` through the Netlify Next.js adapter. The adapter provides page routing, the `/` redirect to `/az`, static assets and the `/api/contact` server route. Publishing the repository directory directly serves source files instead of the application and returns Netlify 404 pages for site routes.
+
 ## Checks
 
 ```sh

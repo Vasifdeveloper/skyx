@@ -1,0 +1,7 @@
+{
+  "passed": [
+    "Chromium passed mobile orbit motion, heading/row reveals, hidden-tab pause, native/entry page transitions, manual/system reduced motion; native transition=true",
+    "Firefox passed mobile orbit motion, heading/row reveals, hidden-tab pause, native/entry page transitions, manual/system reduced motion; native transition=false",
+    "WebKit passed mobile orbit motion, heading/row reveals, hidden-tab pause, native/entry page transitions, manual/system reduced motion; native transition=true"
+  ]
+}

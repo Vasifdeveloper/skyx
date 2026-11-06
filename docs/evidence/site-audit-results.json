@@ -1,0 +1,114 @@
+{
+  "base": "http://127.0.0.1:4387",
+  "time": "2026-11-05T17:23:21.741Z",
+  "passed": [
+    "Direct page and language metadata, sitemap, href and fragment integrity, service FAQ keyboard and CTA, switching valid query + hash, native FAQ and menu with JS disabled, page overflow and HTTP 404 checks executed"
+  ],
+  "issues": [],
+  "layoutCount": 216,
+  "pageCount": 36,
+  "hrefCount": 1563,
+  "status404": [
+    [
+      "/de",
+      404
+    ],
+    [
+      "/fr/about",
+      404
+    ],
+    [
+      "/az/invalid",
+      404
+    ],
+    [
+      "/ru/services/not-a-service",
+      404
+    ],
+    [
+      "/en/other",
+      404
+    ],
+    [
+      "/about",
+      404
+    ]
+  ],
+  "titles": {
+    "/az": "Biznesiniz üçün rəqəmsal inkişaf. | SKYX",
+    "/en": "A growth system for your business. | SKYX",
+    "/ru": "Система роста для вашего бизнеса. | SKYX",
+    "/en/about": "Studio | SKYX",
+    "/az/about": "Studiya | SKYX",
+    "/ru/about": "Студия | SKYX",
+    "/en/services": "Services | SKYX",
+    "/az/services": "Xidmətlər | SKYX",
+    "/ru/services": "Услуги | SKYX",
+    "/en/services/digital-marketing": "Digital marketing | SKYX",
+    "/az/services/digital-marketing": "Rəqəmsal marketinq | SKYX",
+    "/ru/services/digital-marketing": "Цифровой маркетинг | SKYX",
+    "/en/services/ai-automation": "AI automation | SKYX",
+    "/az/services/ai-automation": "AI avtomatlaşdırma | SKYX",
+    "/en/services/ai-architecture": "AI architecture | SKYX",
+    "/ru/services/ai-automation": "AI-автоматизация | SKYX",
+    "/az/services/ai-architecture": "AI arxitekturası | SKYX",
+    "/en/services/data-analytics": "Data and analytics | SKYX",
+    "/ru/services/ai-architecture": "AI-архитектура | SKYX",
+    "/az/services/data-analytics": "Məlumat və analitika | SKYX",
+    "/en/solutions": "Scenarios | SKYX",
+    "/ru/services/data-analytics": "Данные и аналитика | SKYX",
+    "/en/process": "Process | SKYX",
+    "/en/contact": "Discuss your project with SKYX | SKYX",
+    "/az/solutions": "Ssenarilər | SKYX",
+    "/ru/solutions": "Сценарии | SKYX",
+    "/az/process": "Proses | SKYX",
+    "/en/privacy": "Privacy | SKYX",
+    "/ru/process": "Процесс | SKYX",
+    "/en/cookies": "Cookies and storage | SKYX",
+    "/az/contact": "Layihənizi SKYX ilə müzakirə edin | SKYX",
+    "/ru/contact": "Обсудите ваш проект с SKYX | SKYX",
+    "/az/privacy": "Məxfilik | SKYX",
+    "/ru/privacy": "Конфиденциальность | SKYX",
+    "/az/cookies": "Kukilər və yaddaş | SKYX",
+    "/ru/cookies": "Cookies и хранилище | SKYX"
+  },
+  "descriptions": {
+    "/az": "Biznesiniz üçün rəqəmsal inkişaf. Marketinq, AI və avtomatlaşdırma — vahid sistemdə.",
+    "/en": "A growth system for your business. Marketing, AI and automation, connected.",
+    "/ru": "Система роста для вашего бизнеса. Маркетинг, AI и автоматизация — в единой системе.",
+    "/en/about": "SKYX connects marketing, AI, automation and analytics. We start with the problem your business needs to solve and the systems your team already uses.",
+    "/az/about": "SKYX marketinqi, AI alətlərini, avtomatlaşdırmanı və analitikanı birləşdirir. İşə istifadə etdiyiniz sistemlərdən və biznesinizin həll etmək istədiyi məsələdən başlayırıq.",
+    "/ru/about": "SKYX объединяет маркетинг, AI, автоматизацию и аналитику. Мы начинаем с задачи бизнеса и изучаем системы, которыми команда уже пользуется.",
+    "/en/services": "Choose a starting point around the work you need to do. Begin with one discipline and connect the others as your data and processes develop.",
+    "/az/services": "İlk addımı ehtiyacınıza uyğun seçin. Bir istiqamətlə başlaya, sonra işi ortaq məlumat və proseslər üzərindən genişləndirə bilərsiniz.",
+    "/ru/services": "Выберите отправную точку по задаче. Можно начать с одного направления и подключать остальные по мере того, как для них появятся данные и процессы.",
+    "/en/services/digital-marketing": "Connect audiences, channels and measurement so your team can follow the customer journey from first impression to sale.",
+    "/az/services/digital-marketing": "Auditoriyanı, kanalları və ölçmə qaydalarını əlaqələndiririk ki, reklamdan satışa qədər müştəri yolunu izləyə biləsiniz.",
+    "/ru/services/digital-marketing": "Связываем аудиторию, каналы и измерения, чтобы команда видела путь клиента от первого объявления до продажи.",
+    "/en/services/ai-automation": "Connect recurring steps from an incoming request to its next action. Give exceptions a clear route to a person.",
+    "/az/services/ai-automation": "Sorğunun qəbulundan növbəti əməliyyata qədər təkrarlanan addımları əlaqələndiririk. İstisnalar üçün məsul əməkdaşa aydın ötürmə yolu qururuq.",
+    "/en/services/ai-architecture": "Design how data, models and business tools work together. Define quality checks, permissions and a way to track operating costs.",
+    "/ru/services/ai-automation": "Связываем повторяющиеся шаги от входящего запроса до следующего действия. Для исключений предусматриваем передачу ответственному сотруднику.",
+    "/az/services/ai-architecture": "Məlumatların, modellərin və biznes alətlərinin necə əlaqələnəcəyini layihələndiririk. Sistemin keyfiyyətini, giriş hüquqlarını və istismar xərclərini əvvəlcədən nəzərə alırıq.",
+    "/en/services/data-analytics": "Turn data from separate sources into agreed measures. Give the team a clear question for each report and a definition for each number.",
+    "/ru/services/ai-architecture": "Проектируем связи между данными, моделями и бизнес-системами. Заранее определяем требования к качеству, правила доступа и способ оценивать расходы.",
+    "/az/services/data-analytics": "Mənbələrdəki məlumatları ortaq göstəricilərə çeviririk. Komanda hər hesabatın hansı suala cavab verdiyini və rəqəmin necə hesablandığını görə bilir.",
+    "/en/solutions": "Possible applications across six industries. Each example connects a business question to a sequence of actions and a set of measures you can track.",
+    "/ru/services/data-analytics": "Сводим источники в согласованные показатели. Команда видит, на какой вопрос отвечает отчёт и как рассчитывается каждое число.",
+    "/en/process": "Each step gives your team something to use in the next decision. Together we agree on priorities, ownership and how to check the result.",
+    "/en/contact": "Talk to SKYX about your marketing, AI, automation or analytics project.",
+    "/az/solutions": "Altı sahə üçün mümkün ssenarilər. Hər nümunə bir məsələdən başlayır və prosesi qiymətləndirməyə kömək edən göstəricilərlə tamamlanır.",
+    "/ru/solutions": "Возможные сценарии для шести отраслей. Каждый пример связывает бизнес-задачу, последовательность действий и показатели, по которым можно оценить работу.",
+    "/az/process": "Hər mərhələ növbəti qərar üçün material verir. Prioritetləri, məsul şəxsləri və nəticənin necə yoxlanacağını komandanızla razılaşdırırıq.",
+    "/en/privacy": "This page explains what the enquiry form collects, how the information is used and how to contact SKYX about your enquiry.",
+    "/ru/process": "Каждый этап даёт команде материал для следующего решения. Вместе определяем приоритеты, ответственных и способ проверить результат.",
+    "/en/cookies": "The site can remember your motion preference. Your language comes from the page address, and enquiry fields are kept out of persistent browser storage.",
+    "/az/contact": "Marketinq, AI, avtomatlaşdırma və ya analitika ilə bağlı layihəniz üçün SKYX ilə əlaqə saxlayın.",
+    "/ru/contact": "Свяжитесь со студией SKYX по вопросам маркетинга, AI, автоматизации и аналитики.",
+    "/az/privacy": "Bu səhifə müraciət formasının hansı məlumatları qəbul etdiyini, onların necə istifadə olunduğunu və SKYX ilə necə əlaqə saxlaya biləcəyinizi izah edir.",
+    "/ru/privacy": "Здесь описано, какие данные принимает форма обращения, как они используются и куда обратиться с вопросом об обработке.",
+    "/az/cookies": "Sayt hərəkət seçiminizi yadda saxlaya bilər. Dil səhifənin ünvanından oxunur, forma məlumatları isə brauzer yaddaşına yazılmır.",
+    "/ru/cookies": "Сайт может запомнить настройку движения. Язык определяется адресом страницы, а поля формы не записываются в постоянную память браузера."
+  },
+  "errorEvents": []
+}

@@ -1,0 +1,558 @@
+.ip-page {
+  --ip-line: rgba(160, 190, 230, 0.21);
+  --ip-text: #f4f8ff;
+  --ip-muted: #b4c2d8;
+  --ip-blue: #8fbfff;
+  color: var(--ip-text);
+  background: #030710;
+  overflow-wrap: anywhere;
+}
+.ip-shell {
+  max-width: 1568px;
+  padding: 0 clamp(20px, 4.5vw, 72px);
+  margin: 0 auto;
+}
+.ip-page h1,
+.ip-page h2,
+.ip-page h3,
+.ip-page p {
+  margin: 0;
+}
+.ip-page h1,
+.ip-page h2,
+.ip-page h3,
+.ip-faq summary {
+  font-family: Manrope, Inter, Arial, sans-serif;
+  font-weight: 600;
+}
+.ip-page h1 {
+  font-size: clamp(2.625rem, 5.8vw, 5.85rem);
+  line-height: 1.02;
+  letter-spacing: -0.057em;
+  text-wrap: balance;
+}
+.ip-page h2 {
+  font-size: clamp(2rem, 3.7vw, 3.9rem);
+  line-height: 1.1;
+  letter-spacing: -0.045em;
+  text-wrap: balance;
+}
+.ip-page h3 {
+  font-size: clamp(1.45rem, 2.3vw, 2.35rem);
+  line-height: 1.18;
+  letter-spacing: -0.035em;
+}
+.ip-page p,
+.ip-bullets,
+.ip-step dd {
+  color: var(--ip-muted);
+  font-size: clamp(1.125rem, 1.35vw, 1.3125rem);
+  line-height: 1.58;
+}
+.ip-page a {
+  color: inherit;
+}
+.ip-page a:focus-visible,
+.ip-page summary:focus-visible {
+  outline: 2px solid #96ccff;
+  outline-offset: 4px;
+}
+.ip-page section[id] {
+  scroll-margin-top: 110px;
+}
+.ip-page .ip-crumb {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: clamp(22px, 3vw, 48px);
+  font-size: 1rem;
+  color: var(--ip-muted);
+  line-height: 1.35;
+}
+.ip-crumb a {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+.ip-crumb a:hover {
+  text-decoration: underline;
+}
+.ip-crumb span[aria-current] {
+  color: #e5edf9;
+}
+.ip-crumb span[aria-hidden] {
+  color: #718098;
+}
+.ip-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(190px, 0.8fr);
+  align-items: center;
+  gap: clamp(24px, 4vw, 72px);
+  padding: clamp(32px, 5.2vw, 84px) 0 clamp(45px, 6vw, 86px);
+  border-bottom: 1px solid var(--ip-line);
+}
+.ip-hero p {
+  margin-top: clamp(18px, 2.3vw, 32px);
+  max-width: 58ch;
+}
+.ip-hero-diagram {
+  background: radial-gradient(
+    ellipse at center,
+    #0c2442 0%,
+    #071527 35%,
+    transparent 70%
+  );
+  width: 100%;
+  max-width: 510px;
+  justify-self: end;
+}
+.ip-diagram {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.ip-index {
+  display: inline-block;
+  font:
+    500 1rem/1.3 ui-monospace,
+    SFMono-Regular,
+    Consolas,
+    monospace;
+  color: var(--ip-blue);
+  letter-spacing: 0.055em;
+}
+.ip-index-total {
+  color: #8290a7;
+}
+.ip-hero-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.ip-hero-kicker::before {
+  content: "";
+  width: 28px;
+  height: 1px;
+  background: #6796cd;
+}
+.ip-jumps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 22px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--ip-line);
+}
+.ip-jumps a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 0;
+  min-height: 44px;
+  font-size: 1rem;
+  line-height: 1.45;
+  text-decoration: none;
+}
+.ip-jumps a span {
+  color: var(--ip-blue);
+}
+.ip-jumps a:hover,
+.ip-link:hover,
+.ip-service a:hover {
+  color: #a2cfff;
+}
+.ip-block {
+  padding: clamp(46px, 6.3vw, 94px) 0;
+  border-bottom: 1px solid var(--ip-line);
+}
+.ip-split,
+.ip-industry {
+  display: grid;
+  grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.2fr);
+  gap: clamp(36px, 8vw, 144px);
+  align-items: start;
+}
+.ip-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.ip-bullets li {
+  position: relative;
+  padding: 12px 0 12px 22px;
+  border-bottom: 1px solid var(--ip-line);
+}
+.ip-bullets li:first-child {
+  padding-top: 0;
+}
+.ip-bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: calc(12px + 0.67em);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #71aaf2;
+}
+.ip-bullets li:first-child::before {
+  top: 0.67em;
+}
+.ip-bullets li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.ip-work {
+  display: grid;
+  gap: clamp(40px, 8vw, 140px);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.ip-work > div h2 {
+  font-size: clamp(1.9rem, 2.85vw, 2.85rem);
+  margin-bottom: 26px;
+}
+.ip-examples {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(28px, 5vw, 72px);
+  margin-top: clamp(32px, 4vw, 55px);
+}
+.ip-examples > div {
+  border-top: 1px solid #4672a5;
+  padding-top: 20px;
+}
+.ip-examples h3 {
+  margin: 16px 0 12px;
+}
+.ip-page .ip-link {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  margin-top: 20px;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+.ip-link svg,
+.ip-button svg {
+  flex: 0 0 auto;
+}
+.ip-faq details {
+  border-bottom: 1px solid var(--ip-line);
+}
+.ip-faq details:first-child {
+  border-top: 1px solid var(--ip-line);
+}
+.ip-faq summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  list-style: none;
+  padding: 21px 0;
+  min-height: 52px;
+  cursor: pointer;
+  font-size: clamp(1.125rem, 1.7vw, 1.5rem);
+  letter-spacing: -0.02em;
+  line-height: 1.4;
+}
+.ip-faq summary::-webkit-details-marker {
+  display: none;
+}
+.ip-faq summary span {
+  flex: 0 0 14px;
+  height: 14px;
+  position: relative;
+}
+.ip-faq summary span::before,
+.ip-faq summary span::after {
+  content: "";
+  position: absolute;
+  background: var(--ip-blue);
+}
+.ip-faq summary span::before {
+  width: 14px;
+  height: 1.5px;
+  top: 6px;
+}
+.ip-faq summary span::after {
+  height: 14px;
+  width: 1.5px;
+  left: 6px;
+}
+.ip-faq details[open] summary span::after {
+  display: none;
+}
+.ip-faq details p {
+  padding-bottom: 24px;
+}
+.ip-contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: clamp(55px, 7.5vw, 120px) 0;
+}
+.ip-contact > div {
+  max-width: 790px;
+}
+.ip-contact p {
+  margin-top: 17px;
+  max-width: 54ch;
+}
+.ip-page .ip-button {
+  flex: 0 1 auto;
+  min-height: 52px;
+  padding: 13px 20px;
+  display: inline-flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+  line-height: 1.4;
+  text-decoration: none;
+  background: #2168e1;
+  color: white;
+  border: 1px solid #4487fa;
+  border-radius: 4px;
+}
+.ip-button:hover {
+  background: #206aca;
+}
+.ip-service {
+  display: grid;
+  align-items: start;
+  grid-template-columns: minmax(40px, 0.15fr) minmax(0, 1.1fr) minmax(
+      110px,
+      0.4fr
+    );
+  gap: clamp(28px, 5vw, 75px);
+  padding: clamp(32px, 5vw, 70px) 0;
+  border-bottom: 1px solid var(--ip-line);
+}
+.ip-service .ip-index {
+  padding-top: 7px;
+}
+.ip-service h2 {
+  font-size: clamp(1.75rem, 3.2vw, 3.5rem);
+}
+.ip-service h2 a {
+  min-height: 44px;
+  display: inline-block;
+  align-content: center;
+  text-decoration: none;
+}
+.ip-service h2 svg {
+  color: var(--ip-blue);
+  width: 0.6em;
+  height: 0.6em;
+  margin-inline-start: 3px;
+}
+.ip-service p {
+  margin-top: 12px;
+}
+.ip-service .ip-service-result {
+  font-size: 1rem;
+}
+.ip-service-result strong {
+  display: block;
+  color: #d9e8ff;
+  font-weight: 550;
+}
+.ip-diagram-small {
+  align-self: center;
+}
+.ip-principles {
+  padding: 0;
+  margin: 30px 0 0;
+  list-style: none;
+}
+.ip-principles li {
+  display: grid;
+  grid-template-columns: 38px minmax(0, 0.8fr) minmax(0, 1.1fr);
+  gap: clamp(16px, 3.8vw, 60px);
+  border-top: 1px solid var(--ip-line);
+  padding: clamp(22px, 3vw, 42px) 0;
+  align-items: baseline;
+}
+.ip-industry header .ip-index {
+  margin-bottom: 12px;
+}
+.ip-industry header p {
+  margin-top: 18px;
+}
+.ip-page .ip-caption,
+.ip-step dt {
+  color: #9ac8ff;
+  font:
+    550 1rem/1.5 Inter,
+    Arial,
+    sans-serif;
+  letter-spacing: 0;
+}
+.ip-chain {
+  list-style: none;
+  margin: 16px 0 27px;
+  padding: 0;
+}
+.ip-chain li {
+  position: relative;
+  padding: 4px 0 14px 24px;
+  font-size: clamp(1.125rem, 1.45vw, 1.38rem);
+  line-height: 1.4;
+}
+.ip-chain li::before {
+  content: "";
+  position: absolute;
+  left: 3px;
+  width: 6px;
+  height: 6px;
+  top: 13px;
+  border: 1px solid #7db3f3;
+  background: #142c4b;
+  border-radius: 50%;
+}
+.ip-chain li:not(:last-child)::after {
+  position: absolute;
+  width: 1px;
+  content: "";
+  background: #3d577a;
+  left: 6px;
+  top: 21px;
+  bottom: -12px;
+}
+.ip-industry .ip-metrics {
+  margin-top: 9px;
+}
+.ip-process {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.ip-process > li {
+  padding: clamp(38px, 5.4vw, 78px) 0;
+  display: grid;
+  grid-template-columns: minmax(48px, 0.32fr) minmax(0, 1.68fr);
+  gap: clamp(12px, 4vw, 64px);
+  border-bottom: 1px solid var(--ip-line);
+}
+.ip-step-number {
+  font:
+    500 clamp(2.2rem, 5.3vw, 5rem) / 1 Manrope,
+    Inter,
+    sans-serif;
+  color: #83b7f7;
+  letter-spacing: -0.06em;
+}
+.ip-step > p {
+  margin-top: 12px;
+}
+.ip-step dl {
+  margin: 22px 0 0;
+}
+.ip-step dl > div {
+  display: grid;
+  grid-template-columns: minmax(0, 0.52fr) minmax(0, 1.48fr);
+  gap: 22px;
+  border-top: 1px solid var(--ip-line);
+  padding: 12px 0;
+  align-items: baseline;
+}
+.ip-step dd {
+  margin: 0;
+}
+.ip-legal .ip-hero {
+  display: block;
+}
+.ip-legal .ip-hero h1 {
+  max-width: 960px;
+}
+.ip-policy {
+  max-width: 980px;
+  padding-bottom: clamp(52px, 6vw, 86px);
+}
+.ip-policy-section {
+  display: grid;
+  align-items: baseline;
+  gap: clamp(16px, 3vw, 54px);
+  grid-template-columns: 38px minmax(0, 1fr);
+  padding: clamp(30px, 4vw, 56px) 0;
+  border-bottom: 1px solid var(--ip-line);
+}
+.ip-policy-section h2 {
+  font-size: clamp(1.65rem, 2.7vw, 2.8rem);
+  margin-bottom: 16px;
+}
+.ip-policy-section p {
+  max-width: 66ch;
+}
+@media (max-width: 820px) {
+  .ip-hero {
+    grid-template-columns: minmax(0, 1.6fr) minmax(150px, 0.65fr);
+  }
+  .ip-split,
+  .ip-industry {
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+    gap: 26px;
+  }
+  .ip-service {
+    grid-template-columns: 40px minmax(0, 1fr) 125px;
+    gap: 24px;
+  }
+  .ip-service .ip-index-total {
+    display: none;
+  }
+  .ip-principles li {
+    grid-template-columns: 28px minmax(0, 0.7fr) minmax(0, 1fr);
+  }
+}
+@media (max-width: 650px) {
+  .ip-hero {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+  .ip-hero-diagram {
+    width: min(100%, 290px);
+    justify-self: start;
+  }
+  .ip-page .ip-crumb {
+    gap: 8px;
+  }
+  .ip-split,
+  .ip-work,
+  .ip-examples,
+  .ip-industry {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .ip-service {
+    grid-template-columns: 27px minmax(0, 1fr);
+    gap: 14px;
+  }
+  .ip-service .ip-diagram-small {
+    display: none;
+  }
+  .ip-principles li {
+    grid-template-columns: 27px minmax(0, 1fr);
+    gap: 10px 14px;
+  }
+  .ip-principles p {
+    grid-column: 2;
+  }
+  .ip-process > li {
+    grid-template-columns: 1fr;
+    gap: 17px;
+  }
+  .ip-step dl > div {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+  .ip-policy-section {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+}

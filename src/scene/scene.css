@@ -1,0 +1,110 @@
+.orbit-window {
+  position: absolute;
+  inset: 0;
+  overflow: clip;
+  pointer-events: none;
+  z-index: -1;
+}
+.orbit-window.orbit-travel {
+  position: fixed;
+}
+.orbit-stage {
+  position: absolute;
+  pointer-events: none;
+  z-index: -1;
+  left: var(--ox, 74vw);
+  top: var(--oy, 54vh);
+  width: min(65vw, 1060px);
+  aspect-ratio: 1152/880;
+  transform: translate(-50%, -50%) scale(var(--os, 1));
+  opacity: var(--oa, 1);
+  contain: strict;
+}
+.orbit-poster,
+.orbit-gl {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.orbit-gl {
+  opacity: 0;
+}
+.orbit-stage.is-ready .orbit-gl {
+  opacity: 1;
+}
+.orbit-stage.is-ready .orbit-poster {
+  opacity: 0;
+}
+.orbit-still,
+html[data-motion="off"] .orbit-stage {
+  position: absolute;
+  left: 74%;
+  top: 54%;
+  width: min(65vw, 1060px);
+}
+@media (max-width: 680px) {
+  .orbit-stage,
+  .orbit-still,
+  html[data-motion="off"] .orbit-stage {
+    position: absolute;
+    width: min(94vw, 550px);
+    height: clamp(220px, 62vw, 335px);
+    aspect-ratio: auto;
+    left: 53%;
+    top: auto;
+    bottom: 46px;
+    transform: translateX(-50%);
+    opacity: 1;
+  }
+  .orbit-poster {
+    object-fit: contain;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .orbit-stage {
+    position: absolute;
+    left: 74%;
+    top: 54%;
+  }
+}
+
+.orbit-gl * {
+  pointer-events: none !important;
+}
+
+/* The poster remains animated in narrow previews and on software renderers.
+   Only its local layer moves, so it never travels through mobile text. */
+.orbit-poster {
+  transform: rotate(var(--poster-turn, 0deg));
+}
+html[data-motion="on"] .orbit-stage:not(.is-ready) .orbit-poster {
+  animation: skyx-orbit-float 14s ease-in-out infinite;
+  animation-play-state: paused;
+  transform-origin: 50% 52%;
+}
+html[data-motion="on"]
+  .orbit-stage[data-hero-visible="true"]:not(.is-ready)
+  .orbit-poster {
+  animation-play-state: running;
+}
+@keyframes skyx-orbit-float {
+  0%,
+  100% {
+    transform: translate3d(0, 4px, 0) rotate(-3deg) scale(1);
+  }
+  50% {
+    transform: translate3d(0, -14px, 0) rotate(5deg) scale(1.025);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .orbit-poster {
+    animation: none !important;
+    transform: none;
+  }
+}
+html[data-motion="off"] .orbit-poster {
+  animation: none !important;
+  transform: none;
+}

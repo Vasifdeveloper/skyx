@@ -1,0 +1,157 @@
+{
+  "date": "2026-11-05T17:31:56.177Z",
+  "method": "Local production resources; fresh Chromium context per sample; gzip level 9 of existing minified JavaScript files; 2s after network idle.",
+  "samples": [
+    {
+      "locale": "az",
+      "reducedMotion": "reduce",
+      "viewport": "1440x900",
+      "canvasCount": 0,
+      "fallback": null,
+      "initialJs": {
+        "files": 8,
+        "gzipKiB": 156.6
+      },
+      "lazyJs": {
+        "files": 0,
+        "gzipKiB": 0
+      },
+      "fonts": {
+        "files": 4,
+        "encodedKiB": 169.22,
+        "decodedKiB": 169.22
+      },
+      "load": {
+        "encodedKiB": 450.14,
+        "transferKiB": 455.41
+      }
+    },
+    {
+      "locale": "ru",
+      "reducedMotion": "reduce",
+      "viewport": "1440x900",
+      "canvasCount": 0,
+      "fallback": null,
+      "initialJs": {
+        "files": 8,
+        "gzipKiB": 156.6
+      },
+      "lazyJs": {
+        "files": 0,
+        "gzipKiB": 0
+      },
+      "fonts": {
+        "files": 4,
+        "encodedKiB": 103.85,
+        "decodedKiB": 103.85
+      },
+      "load": {
+        "encodedKiB": 386.11,
+        "transferKiB": 391.39
+      }
+    },
+    {
+      "locale": "en",
+      "reducedMotion": "reduce",
+      "viewport": "1440x900",
+      "canvasCount": 0,
+      "fallback": null,
+      "initialJs": {
+        "files": 8,
+        "gzipKiB": 156.6
+      },
+      "lazyJs": {
+        "files": 0,
+        "gzipKiB": 0
+      },
+      "fonts": {
+        "files": 2,
+        "encodedKiB": 71.38,
+        "decodedKiB": 71.38
+      },
+      "load": {
+        "encodedKiB": 351.46,
+        "transferKiB": 356.15
+      }
+    },
+    {
+      "locale": "az",
+      "reducedMotion": "no-preference",
+      "viewport": "1440x900",
+      "canvasCount": 0,
+      "fallback": "software-renderer",
+      "initialJs": {
+        "files": 8,
+        "gzipKiB": 156.6
+      },
+      "lazyJs": {
+        "files": 1,
+        "gzipKiB": 238.64
+      },
+      "fonts": {
+        "files": 4,
+        "encodedKiB": 169.22,
+        "decodedKiB": 169.22
+      },
+      "load": {
+        "encodedKiB": 689.56,
+        "transferKiB": 695.13
+      }
+    }
+  ],
+  "assets": [
+    {
+      "name": "horizon.svg",
+      "bytes": 59978
+    },
+    {
+      "name": "mark.svg",
+      "bytes": 317
+    },
+    {
+      "name": "orbit.svg",
+      "bytes": 82038
+    },
+    {
+      "name": "skyx.png",
+      "bytes": 18407
+    },
+    {
+      "name": "social.png",
+      "bytes": 433512
+    }
+  ],
+  "fontFiles": [
+    {
+      "name": "inter-cyrillic-wght-normal.woff2",
+      "bytes": 18748
+    },
+    {
+      "name": "inter-latin-ext-wght-normal.woff2",
+      "bytes": 85068
+    },
+    {
+      "name": "inter-latin-wght-normal.woff2",
+      "bytes": 48256
+    },
+    {
+      "name": "manrope-cyrillic-wght-normal.woff2",
+      "bytes": 14500
+    },
+    {
+      "name": "manrope-latin-ext-wght-normal.woff2",
+      "bytes": 15120
+    },
+    {
+      "name": "manrope-latin-wght-normal.woff2",
+      "bytes": 24836
+    }
+  ],
+  "sceneBuildChunks": [
+    {
+      "name": "2zgowy28bbye6.js",
+      "bytes": 928322,
+      "gzipKiB": 238.64
+    }
+  ]
+}

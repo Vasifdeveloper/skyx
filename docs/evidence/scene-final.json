@@ -1,0 +1,12 @@
+{
+  "passed": [
+    "First real WebGL frame renders, exactly one canvas",
+    "Hidden document stops WebGL draws, visibility restore resumes",
+    "Forward/reverse scroll matches poses with no horizontal overflow",
+    "Direct hash, locale change and Back restore the section pose",
+    "Contact fades the canvas completely",
+    "Context loss removes WebGL and displays the finished poster",
+    "Reduced motion disables WebGL and travel",
+    "WebGL unavailable preserves content and SVG fallback"
+  ]
+}
